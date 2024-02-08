@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap');
+
+body {  
+    direction: rtl;
+    background-color: rgb(226, 226, 226);
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    margin: 0; 
+    padding: 0; 
+    overflow: auto;
+    transition: transform 0.3s ease s;
+}
+
+.tam {
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 70, 0.1);
+}
+.tam img {
+    margin-bottom: 3px;
+}
+@media all and (max-width: 1024px) {
+    .tam h3 {
+        font-size: 28px;
+    }
+
+}
+@media all and (max-width: 700px) {
+    .tam h3 {
+        font-size: 25px;
+    }
+}
+@media all and (max-width: 600px) {
+    .tam h3 {
+        font-size: 20px;
+    }
+}
+@media all and (max-width: 500px) {
+    .tam h3 {
+        font-size: 15px;
+    }
+}
+@media all and (max-width: 390px) {
+    .tam h3 {
+        font-size: 12px;
+    }
+    .all a {
+        font-size: 13px;
+    }
+}
+.navbtn {
+    height: 45px;
+    cursor: pointer;
+    margin-right: 1.5%;
+    margin-top: 40px;
+    outline: none;
+    background-color: rgb(0, 0, 70);
+    color: gray;
+    border: none;
+    border-radius: 80px;
+    font-weight: bold;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    width: 97%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    box-shadow: 0 2px 1px rgba(0, 0, 70, 0.1);
+    transition: 0.5s;
+}
+.navbtn:hover {
+    color: rgb(0, 0, 70);
+    background-color: gray;
+    box-shadow: 0 10px 10px rgba(128, 128, 128, 0.4);
+}
+.qdiv h2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 70);
+
+}
+.qone , .qtwo , .qthree , .qfour {
+    background-color: lightgray;
+    border: dotted rgb(0, 0, 70);
+    margin: 14px;
+    cursor: pointer;
+
+}
+.chty {
+    padding-top: 20px;
+    border-top: double;
+    font-size: 17px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.chty1 {
+    padding-top: 0;
+    margin-top: 0;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chdiv div{
+    cursor: pointer;
+    background-color: lightgray;
+    border: dashed;
+    margin: 14px;
+    display: grid;
+    grid-template-columns: 50% 50%;    
+}
+.chdiv div img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media all and (min-width: 700px) {
+    .qach {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+}
+nav {
+    width: 100%;
+    position: fixed;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+nav {
+    z-index: 1;
+}
+* {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+*:not(nav){
+    z-index: 0;
+}
+
